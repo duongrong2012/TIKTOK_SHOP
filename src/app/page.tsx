@@ -43,14 +43,15 @@ export default function Home() {
     <div className={styles.container}>
       <div className={styles.leftMenu}>
         <div className={styles.groupTop}>
-          <div className={styles.leftMenuHeader}>
-            <Image alt='' src={images.Group19624} className='w-[119.85px] h-[40px]' />
-            <Image alt='' src={images.arrowLeft} className='w-[24px] h-[24px]' />
+          <div className={`${styles.leftMenuHeader} justify-center dt:justify-between`}>
+            <Image alt='' src={images.miniLogo} className='w-[24px] h-[24px] dt:hidden' />
+            <Image alt='' src={images.Group19624} className='hidden w-[119.85px] h-[40px] dt:block' />
+            <Image alt='' src={images.arrowLeft} className='hidden w-[24px] h-[24px] dt:block' />
           </div>
           <div className={styles.border}></div>
           <div className='flex flex-row gap-3 items-center'>
-            <Image alt='' src={images.arrowleft2} className='w-[14px] h-[14px]' />
-            <div className=''>Switch to ads account center</div>
+            <Image alt='' src={images.arrowleft2} className='hidden w-[14px] h-[14px]' />
+            <div className='hidden'>Switch to ads account center</div>
           </div>
           <div className={'flex flex-col gap-3'}>
             {leftMenuList.map((item) => (
@@ -62,19 +63,30 @@ export default function Home() {
               >
                 <div className='flex flex-row gap-[10px]'>
                   <Image alt='' src={item.icon} className='w-[20px] h-[20px]' />
-                  <div className='xs:hidden'>{item.title}</div>
+                  <div className={`hidden dt:block`}>{item.title}</div>
                 </div>
                 {item.hasDropDown && (
-                  <Image alt='' src={images.arrowDown} className='w-[14px] h-[14px]' />
+                  <Image alt='' src={images.arrowDown} className='hidden w-[14px] h-[14px]' />
                 )}
               </div>
             ))}
           </div>
         </div>
-        <div className='px-[16px] py-[10px]'>Terms of Policy</div>
+        <div className='hidden flex-1 dt:flex'></div>
+        <div className='hidden px-[16px] py-[10px] dt:block'>Terms of Policy</div>
       </div>
-      <div className={styles.secondCol}>
-        <div className='w-[1176px] marg xs:bg-red-700'>aaaaaaaaaa</div>
+      <div className={`ml-[92px] flex flex-1 flex-col dt:ml-[250px]`}>
+        <div className='marg flex flex-row mt-8 items-center tb:px-5 dt:px-11'>
+          <div className='hidden tb:block'>Connect TikTok Shop</div>
+          <div className='flex flex-1' />
+          <div className='flex flex-row items-center'>
+            <Image alt='' src={images.notificationBell} className='w-[40px] h-[40px] mr-5' />
+            <Image alt='' src={images.avatarRound} className='w-[40px] h-[40px] mr-1' />
+            <div>David</div>
+            <Image alt='' src={images.arrowDown2} className='w-[24px] h-[24px]' />
+          </div>
+        </div>
+        <div></div>
       </div>
     </div>
   );

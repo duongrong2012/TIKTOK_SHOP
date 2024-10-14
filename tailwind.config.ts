@@ -1,3 +1,4 @@
+import { dtBreakpoint,mbBreakpoint,tbBreakpoint } from "./src/Constant";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,7 +9,9 @@ const config: Config = {
   ],
   theme: {
     screens: {
-      'xs': '475px',
+      'mb': mbBreakpoint,
+      'tb': tbBreakpoint,
+      'dt': dtBreakpoint,
     },
     extend: {
       colors: {
