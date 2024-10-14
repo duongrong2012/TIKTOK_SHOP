@@ -9,6 +9,20 @@ import setting3 from './setting-3.svg'
 import box from './box.svg'
 import arrowDown from './arrow-down.svg'
 import setting from './setting.svg'
+import miniLogo from './miniLogo.svg'
+import notificationBell from './notificationBell.svg'
+import arrowDown2 from './arrow-down2.svg'
+import avatarRound from './avatarRound.svg'
+import shopAdd from './shopAdd.svg'
+import exportIcon from './exportIcon.svg'
+import bigCircleStep from './bigCircleStep.svg'
+import bigCircleStep2 from './bigCircleStep2.svg'
+import arrowDown3 from './arrowDown3.svg'
+import arrowRight from './arrowRight.svg'
+import boxAdd2 from './boxAdd2.svg'
+import profileCircle from './profileCircle.svg'
+import checkIcon from './checkIcon.svg'
+import shopppingBag from './shopppingBag.svg'
 
 export const images = {
     Group19624,
@@ -21,7 +35,21 @@ export const images = {
     setting3,
     box,
     arrowDown,
-    setting
+    setting,
+    miniLogo,
+    notificationBell,
+    arrowDown2,
+    avatarRound,
+    shopAdd,
+    exportIcon,
+    bigCircleStep,
+    arrowDown3,
+    bigCircleStep2,
+    arrowRight,
+    boxAdd2,
+    profileCircle,
+    checkIcon,
+    shopppingBag,
 }
 
 export default images
